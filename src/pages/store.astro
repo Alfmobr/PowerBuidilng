@@ -1,0 +1,273 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Carrusel from '../components/carrusel.astro';
+import WahatsApp from '../components/wasap.astro';
+---
+
+<Layout title="Tienda Power Buildign ">
+    <WahatsApp/>
+    <section>
+
+        <div class="container-b-t">
+        <div class="banner-destok">
+           <Carrusel
+           src='public/img/banner-store.webp'
+             src1='public/img/barras.jpeg'
+               src2='public/img/banner-store.webp'
+                src2='public/img/banner-store.webp'
+                 src2='public/img/banner-store.webp'
+           alt='banner'
+           />
+
+    
+        </div>
+    </div>
+    <div class="tittle">
+        <h1>Tienda</h1>
+        <p><span>¿Quieres ver resultado rapidos? </span>
+            has vendio al lugar correcto, obten ya tu suplemento y disfruta del proceso.
+        </p>
+    </div>
+    </section>
+    <section class="container-card">
+
+        <div class="item-group">
+
+       
+        		<Card
+        src='public/img/catalogo/Gold-STANDARD-WHEY.webp'
+	    href="https://wa.me/50589600977"
+		title="GOLD STANDARD WHEY"
+		body="Proteina '24g 2Lb el tarro'"
+         price = 'C$ 30'
+	/>
+
+    <Card
+    src='public/img/catalogo/bpi-SPORT-WHEY-HD.webp'
+    href="/index"
+    title="BPI SPORT WHEY HD"
+    body="Proteina '24g 2Lb el tarro'"
+     price = 'C$ 30'
+/>
+
+<Card
+src='public/img/catalogo/ISO-100.webp'
+href="/index"
+title="ISO 100"
+body="Proteina '24g 2Lb el tarro'"
+ price = 'C$ 30'
+/>
+
+<Card
+src='public/img/catalogo/ISO-PHORM.webp'
+href="/index"
+title="ISO PHORM"
+body="Proteina '44g 2Lb el tarro'"
+ price = 'C$ 30'
+/>
+
+<Card
+src='public/img/catalogo/METANDROSTENOLONA.webp'
+href="/index"
+title="METANDROSTENLONA"
+body="Proteina '24g 2Lb el tarro'"
+ price = 'C$ 30'
+/>
+
+<Card
+src='public/img/catalogo/OXANDROPLEX.webp'
+href="/index"
+title="OXANDROPLEX"
+body="Proteina '24g 2Lb el tarro'"
+ price = 'C$ 30'
+/>
+
+<Card
+src='public/img/catalogo/PERFECT-BODY.webp'
+href="/index"
+title="PERFECT BOODY"
+body="Proteina '24g 2Lb el tarro'"
+ price = 'C$ 30'
+/>
+<Card
+src='public/img/catalogo/TESTEX-Depot-250.webp'
+href="/index"
+title="TESTEX DEPOT 250"
+body="Proteina '24g 2Lb el tarro'"
+ price = 'C$ 30'
+/>
+
+
+ 
+    </section>
+<article>
+    <h3>fin</h3>
+</article>
+
+</Layout>
+
+<style>
+    html{
+        background-color: #fff;
+    }
+    body{
+        background-color: #882626;
+    }
+
+    section{
+        width: 100%;
+        height: 100vh;
+        background-color: #080808;
+        padding: 10px 0px 10px 0px;
+    }
+    .container-card{
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .item-group{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 9px;
+        overflow-x: scroll;
+    }
+
+    .banner-destok{
+        width: 80%;
+        height: 180px;
+        position: relative;
+        display: block;
+     
+        img{
+            width:100%;
+            height: 100%;
+            object-fit:contain;
+            display: block; 
+
+        }
+    }
+
+    
+    .container-b-t{
+            width: 100%;
+            display: flex;
+            padding-top: 10px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 25px;
+          
+        }
+
+    .tittle{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            /* font-size: clamp(2rem , 2.5rem , 3rem); */
+            font-size: 50px;
+            color: #FFE651;
+            color: #9CF23C;
+        }
+        p{
+            max-width: 600px;
+            font-size: 3vw;
+            font-size: 18px;
+            padding-left: 10px;
+
+
+            span{
+               
+                font-weight: bold;
+                color: #FFE651;
+                font-size: 20px;
+                /* font-size: clamp(20px , .5rem , 25px); */
+            }
+        }
+    }
+
+    
+	@media screen and (min-width: 768px) {
+
+        section{
+        width: 100%;
+        height: 100vh;
+        background-color: #080808;
+        padding: 10px 0px 10px 0px;
+    }
+    .container-card{
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .item-group{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 9px;
+        overflow-x: scroll;
+    }
+
+    .banner-destok{
+        width: 100%;
+        height: 180px;
+        position: relative;
+        display: block;
+     
+        img{
+            width:100%;
+            height: 100%;
+            object-fit:contain;
+            display: block; 
+
+        }
+    }
+
+    
+    .container-b-t{
+            width: 100%;
+            display: flex;
+            padding-top: 10px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 25px;
+          
+        }
+
+    .tittle{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            /* font-size: clamp(2rem , 2.5rem , 3rem); */
+            font-size: 50px;
+            color: #FFE651;
+            color: #9CF23C;
+        }
+        p{
+            max-width: 600px;
+            font-size: 3vw;
+            font-size: 18px;
+            padding-left: 10px;
+
+
+            span{
+               
+                font-weight: bold;
+                color: #FFE651;
+                font-size: 20px;
+                /* font-size: clamp(20px , .5rem , 25px); */
+            }
+        }
+    }
+
+</style>

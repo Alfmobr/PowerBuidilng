@@ -1,0 +1,67 @@
+---
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+ 
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/fit.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body >
+		<Header/>
+		<main>
+			<slot />
+		</main>
+		<Footer/>
+	</body>
+</html>
+<style is:global>
+	html {
+		font-family: system-ui, sans-serif;
+		background: #393939;
+		color-scheme: dark light;
+	
+		
+		
+	}
+	body{
+		padding: 0;
+		margin: 0;
+		background-color: #080808;
+		box-sizing: border-box;
+		}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	@media screen and (min-width: 764px) {
+		body{
+		
+		}
+}
+</style>

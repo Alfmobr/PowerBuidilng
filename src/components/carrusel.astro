@@ -1,0 +1,220 @@
+---
+interface Props {
+	src: string;
+    src1: string;
+    src2: string;
+	alt : string
+}
+
+const {src , src1, src2, alt } = Astro.props;
+---
+
+<div class="carrusel">
+<div class="conteiner-all">
+    <input type="radio" id="1Car" name="slideImg" hidden/>
+    <input type="radio" id="2Car" name="slideImg" hidden/>
+    <input type="radio" id="3Car" name="slideImg" hidden/>
+    
+   <div class="slide">
+
+        <div class="SlideItem">
+            <img src={src}  alt={alt}>
+            <img src={src1}  alt={alt}>
+            <img src={src2}  alt={alt}>
+            <img src={src2}  alt={alt}>
+            <img src={src2}  alt={alt}>
+        </div>
+
+
+
+        <!-- <div class="pagination">
+        
+            <label class="PagntItem" for="1Car">
+               <img src="img/mujer canta .jpeg">
+            </label>
+           
+            <label class="PagntItem" for="2Car">
+               <img src="img/auriculares pag .jpeg">
+            </label>
+   
+            <label class="PagntItem" for="3Car">
+               <img src="img/herranientas .jpeg">
+            </label>
+        </div> -->
+  </div>
+</div>
+
+
+
+<style>
+
+
+.carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+    
+.conteiner-all{
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 10s ease-in-out;
+    animation-name: autoplay;
+    animation-duration: 20s;
+    animation-direction:alternate;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+}
+
+.SlideItem{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    height: 180px;
+/* 
+    img{
+        object-fit: cover ;
+    } */
+}
+
+@keyframes autoplay{
+    0%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    50%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    100%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+    
+.conteiner-all{
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    border: 4px solid #3f3e3edd;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 10s ease-in-out;
+    animation-name: autoplay;
+    animation-duration: 8s;
+    animation-direction:alternate;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+}
+
+.SlideItem{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+/* .pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.PagntItem{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+     background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+.pagination-item:hover{
+    transform: scale(2);
+}
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1.1);
+    opacity: 0;
+    transition: all 300ms;
+}
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[id="1Car"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+input[id="1Car"]:checked ~ .pagination .pagination-item[for="1Car"]{
+    background: white;
+}
+
+input[id="2Car"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+input[id="2Car"]:checked ~ .pagination .pagination-item[for="2Car"]{
+    background: white;
+}
+
+input[id="3Car"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+input[id="3Car"]:checked ~ .pagination .pagination-item[for="3Car"]{
+    background: white;
+} */
+
+@keyframes autoplay{
+    0%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    50%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    100%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+}
+} 
+</style>

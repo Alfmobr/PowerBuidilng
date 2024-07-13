@@ -1,0 +1,72 @@
+---
+---
+<style>
+    .faq-container {
+       width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    details {
+        border-bottom: 1px solid #aaa;
+        border-radius: 4px;
+        padding: 10px;
+        margin-bottom: 10px;
+        transition: all 0.3s ease;
+        background-color:transparent;
+    }
+
+    summary {
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    details[open]  {
+        animation: fadeIn .3s ease-out;
+    }
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<div class="faq-container">
+    <h2>FAQ'S</h2>
+    <details name="info" open>
+        <summary  >¿Qué se logra con este programa?</summary>
+        <p>Este es un programa de entrenamiento de fuerza en gimnasio en el que te servirá para ganar masa muscular,
+            fuerza y perder grasa, cualquiera de esos objetivos.</p>
+    </details>
+    <details name="info">
+        <summary>¿Incluye dieta?</summary>
+        <p>Este es un programa mayormente de entrenamiento y en cuanto a la alimentación, 
+            te enseña a calcular las calorías y macros enfocados a tus metas concretas.</p>
+        <p>Si no sabes nada de alimentación es preferible contratar a un nutricionista deportivo a parte de este entrenamiento.</p>
+    </details>
+    <details name="info">
+        <summary>¿Funciona este programa a pesar de no ser personalizado?</summary>
+        <p>Si llevas el programa a rajatabla y disciplinado, es muy improbable que no veas resultados, 
+            de no verlos tal vez necesites ya algo mucho más individualizado, 
+            tal vez porque ya eres más avanzado o simplemente porque necesitas ponerte bajo el ojo de un profesional para detectar todos los errores.</p>
+    </details>
+    <details name="info">
+        <summary>¿Hay recomendaciones de suplementos?</summary>
+        <p>Si, pero entiende que de entre todo lo importante para progresar, 
+            los suplementos están en lo más bajo de la pirámide en cuánto a importancia, NUNCA bases tus resultados en un suplemento.</p>
+    </details>
+    <details name="info">
+        <summary>¿El programa es personalizado?</summary>
+        <p>Este programa a bajo costo NO es personalizado ni tiene apoyo de Adrián, 
+            es un programa que busca darte una guía de lo que tienes que hacer durante 3 meses con videos, cuadriculas, y PDFs descargables, 
+            lo tendrás todo en una plataforma después del pago.</p>
+    </details>
+</div>

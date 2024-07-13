@@ -1,0 +1,539 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Slider from '../components/slider.astro';
+import Desplegable from '../components/desplegable.astro';
+
+
+---
+
+<Layout  title="Planes Power Building 2.0">
+
+    <section class="sect-element-gruop-main">
+
+       
+
+        <div class="container-elements-div">
+            <h1> <span>Power</span> <br>Building 2.0 </h1>
+            <p class="style-p-center-index-mobile">¡TU CAMINO PARA ROMPER LÍMITES!</p>
+
+            <div class="container-btn">
+                <a class="btn-click-Start-Now" href="#">¡EMPIEZA HOY!</a>
+            </div>
+        </div>
+              
+    </section>
+
+    <section class="sect-element-gruop-main">
+        <div class="container-elements-div">
+
+            <div class="container-list-beneficio">
+           <h3>GYM FITNESS</h3>
+
+         <p >¿Qué estás esperando, crack? Si estás harto de dar vueltas en el 
+            gimnasio sin resultados reales, 
+                Power Building 2.0 es tu solución. Aquí no te vamos a endulzar la píldora,
+                 esto es entrenamiento de verdad, sin trucos ni rodeos.</p>
+
+                    <h3>¿Qué te Ofrezco?</h3>
+
+
+                   
+                        <ul>  <li> ⁠Ganas una fuerza que asusta.</li>
+                            <li>⁠Masa muscular como nunca imaginaste.</li>
+                            <li>⁠No hay secretos, solo técnicas que funcionan.</li>
+                            <li>⁠Tips reales, sin tonterías, de los que saben de esto.</li></ul>
+                      
+                    </div>
+            </div> 
+
+</section>
+
+
+<!-- esto esta en proceso -->
+   
+<!-- <section class="sect-element-gruop-main">
+
+        <div class="container-result"><h2>Resultados</h2></div>
+   <div class="center">
+    <h1>hola
+      </h1>
+    </div>    
+      
+</section> -->
+
+    <section class="sect-element-gruop-main  red">
+
+
+    <div class="container-elements-div  bg-independiente-div-ul-list">
+
+        <div class="container-element-ul-list">
+            <h3>ENTRENAMIENTO + RECOMENDACIONES NUTRICIONALES</h3>
+        <ul>
+              <li> ✔︎ 1 MES DE ENTRENAMIENTO Y RECOMENDACIONES NUTRICIONALES</li>
+              <li> ✔︎  RUTINAS  DE ENTRENAMIENTO</li>
+              <li>✔︎ ENTRENAMINTO PERSONAL</li>
+              <li> ✔︎ + 50 EJEMPLOS DE COMIDA</li>
+              <li>✔︎ CALCULADORA DE CALORÍAS</li>
+              <li> ✔︎ UN PLAN PARA HOMBRE Y OTRO PARA MUJER</li>
+       </ul>
+      </div>
+        
+</div>
+
+</section >
+
+        <article>
+        <p>¿Te preguntas si esto funciona? Olvídate de preguntas,
+             escucha a nuestros hermanos de hierro que ya lo vivieron. 
+             No somos gurús, somos gente real que ha conseguido resultados reales.</p>
+        </article>
+
+         <article>
+        <p>No pierdas más tiempo. Únete a la familia de Power Building 2.0 y empieza a destrozarlo en el gimnasio.
+            ¿Listo para el cambio real?</p>
+        </article>
+ <section class="sect-element-gruop-main">
+
+        <div class="faq">
+            <Desplegable/>
+        </div>
+     
+</section>
+
+
+<!-- </Layout> -->
+
+
+<style>
+    
+    .sect-element-gruop-main{
+        width: 100%;
+        height: 100vh;
+        background-color: #080808;
+
+
+        /* .bg-independiente-div-ul-list{
+            height: 100%;
+            background-color: rgba(115, 115, 115, 0.738);
+        } */
+        
+
+
+        .container-elements-div{
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+
+        h1{
+    color:#FFCC33;  
+   font-size: 36px;
+    text-align: center;
+    font-weight: 800;
+
+    span{
+        color: rgb(255, 255, 255);
+        text-shadow: 
+         0px 0px 4px #0659ff ,
+        0px 0px 6px #0659ff ,
+        0px 0px 20px #0659ff, 
+        0px 0px 4px #FFCC33 ,
+        0px 0px 6px #FFCC33 ,
+        0px 0px 15px #FFCC33;
+        font-size: 36px;
+        font-weight: 800;
+}
+    }
+    h2{
+            color: #ffffff;
+            font-size: 24px;
+          
+        }
+
+        .style-p-center-index-mobile{ 
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 16px;
+}
+
+h3{
+    font-size: 20px;
+    color: #FFCC33;
+    height: max-content;
+}
+
+p{
+        font-size: 16px;
+    line-height: 1.5;
+    }
+
+    .container-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .btn-click-Start-Now{
+        padding: 20px 30px 20px  30px ;
+        text-align: center;
+        border-radius: 8px;
+        background-color: #FFCC33;
+        background-color: rgb(21, 125, 228);
+        text-decoration: none;
+        color: #000;
+        font-weight: bold ;
+    
+    }
+}
+
+.container-list-beneficio{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+
+    ul {
+    padding: 20px;
+    border-radius: 10PX;
+    margin-top: -20px;
+
+    li{
+        margin: 0; 
+        font-size: 15px;
+        text-decoration:underline;
+        line-height: 1.5;
+      }
+   }
+}
+        }
+.container-result{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+    }
+
+
+.red{
+background-image: url(/public/img/barras.jpeg);
+background-image: url(https://adrianherrerocoach.com/wp-content/uploads/2022/08/barbell-on-the-floor.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.container-element-ul-list{
+        width: 100%;
+
+
+        ul{
+          border-radius: 0px;
+          width: auto;
+            li{
+                text-decoration: none;
+                list-style: none;
+                font-size: 16px;
+            }
+        }
+
+
+}
+
+.faq{
+         width: 100%;
+         height: auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+       
+    }
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+      
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    p span{
+        font-size: 20px;
+        font-weight: 600;
+        font-size: 4vw;
+    }
+
+    .div{ 
+        display: flex;
+    }
+
+    h2{
+        width: 100%;
+        color: #333;
+        font-weight: 800;
+        text-align: center;
+      
+    }
+
+ 
+
+    img{
+        width: 400px;
+    }
+
+    .container-img{
+display: none;
+    }
+
+    .imgg{
+        
+        background-size: contain;
+
+    } */
+
+
+    
+	@media screen and (min-width: 801px) {
+
+        h1{
+        color:#FFCC33;  
+    font-size: 2em;
+    /* font-size: 5vw; */
+    text-align: center;
+    margin: 20px 0;
+        font-weight: 800;
+    }
+	
+
+    .container-img{
+        display: block;
+        position: absolute;
+        left:110%; 
+        top: 5%;
+        width: 100%;
+        height: 200px;
+       filter: drop-shadow(0px 0px 20px #333) ;
+    }
+
+    
+    .container-section{
+        background-image: url(/public/img/ans.jpg);
+		background-repeat: no-repeat;
+		background-size: calc(1300px - 100px);    
+    }
+
+    .imgg{
+
+        background-size: contain;
+
+    }
+	}
+
+
+
+
+    /* .product {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
+    .product-name {
+      font-size: 1em;
+      margin: 10px 0;
+    }
+    .product-price {
+      color: #007BFF;
+      font-size: 1em;
+    } */
+
+.center{
+    display: grid;
+    place-content: center;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+    img{
+        width: 150px;
+        position: absolute;
+        right: 10px;
+    }
+}
+
+.icon{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+    section{
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+ 
+    }
+
+    .d{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+    }
+
+    .element-group-div{
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+       
+    }
+
+ 
+
+     h1{
+    color:#FFCC33;  
+    font-size: 1em;
+    font-size: 1vw;
+    text-align: center;
+    font-weight: 800;
+    /* margin-top: 60px; */
+    }
+
+    span{
+        color: rgb(255, 255, 255);
+        /* text-shadow: 
+         0px 0px 4px #0659ff ,
+        0px 0px 6px #0659ff ,
+        0px 0px 20px #0659ff, 
+        0px 0px 4px #FFCC33 ,
+        0px 0px 6px #FFCC33 ,
+        0px 0px 15px #FFCC33; */
+        font-size: 1em;
+        font-size: 1vw;
+}
+
+.style-p{ 
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.div-buton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-list{
+    display: flex;
+    flex-direction: column;
+}
+ul {
+    font-size: 1vw;
+    padding: 20px;
+    border-radius: 10PX;
+
+    li{
+        margin-bottom: 10px;
+        text-decoration:underline;
+    }
+}
+
+
+    a{
+        
+        padding: 20px 30px 20px  30px ;
+        text-align: center;
+        border-radius: 8px;
+        background-color: #FFCC33;
+        background-color: rgb(21, 125, 228);
+        text-decoration: none;
+        color: #000;
+        font-weight: bold ;
+        margin-top: 10px;
+    }
+    
+     
+    p{
+        font-size: 0.5em;
+    font-size: 1vw;
+    line-height: 1.5;
+    }
+
+    p span{
+        font-size: 20px;
+        font-weight: 600;
+        font-size: 1vw;
+    }
+
+    .div{
+        display: flex;
+    }
+
+    h2{
+        width: 100%;
+        color: #333;
+        font-weight: 800;
+        text-align: center;
+        /* font-size: 30px; */
+        font-size: 1vw;
+    }
+
+    h3{
+        font-size: 1vw;
+        color: #FFCC33;
+        
+    }
+
+    img{
+        width: 100px;
+    }
+
+    .container-img{
+display: none;
+    }
+
+    .imgg{
+        
+        background-size: contain;
+
+    }
+</style>
