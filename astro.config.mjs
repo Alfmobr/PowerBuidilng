@@ -5,4 +5,4 @@ export default defineConfig({
   output: 'static',
   adapter: vercel(),
   site: 'https://alfmobr.github.io/gym-site-astro', 
-});
+})
