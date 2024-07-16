@@ -1,0 +1,29 @@
+<div data-component="carousel">
+	<ul class="entries" tabindex="0">
+		<li><a ="carousel_01"><img src="../shared/img/matroshka-01.svg" alt="" title="" width="222" height="184" draggable="false"></a></li>
+
+	</ul>
+	<ul class="markers">
+		<li><a href="#carousel_01"><span class="sr-only">Photo 1</span></a></li>
+	<ul>
+</div>
+
+<style>
+    [data-component="carousel"] {
+	.entries {
+		scroll-timeline: --carousel x;
+	}
+
+	.markers a {
+		animation-timeline: --carousel;
+	}
+}
+
+[data-component="carousel"] {
+	timeline-scope: --carousel;
+}
+
+.markers a {
+	animation-range: calc((var(--i) - 1) * 20%) calc(var(--i) * 20% + 1px);
+}
+</style>

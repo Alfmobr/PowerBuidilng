@@ -2,17 +2,18 @@
 interface Props {
 	title: string;
 	body: string;
+	hrefW: string;
 	href: string;
 	src: string;
 	price : string
 }
 
-const {src , href, title, body , price } = Astro.props;
+const {src , hrefW, href ,  title, body , price } = Astro.props;
 ---
 
 <div class="link-card">
 
-	<div class="container-img">
+	<div class="container-img"  >
 		<img src={src} alt=''>
 	</div>	
 	<h2>
@@ -20,11 +21,34 @@ const {src , href, title, body , price } = Astro.props;
 	</h2>
 	<p>
 		{body}
-
-		<span>{price}</span>
+	
 	</p>
-	<a class="whatsapp-button" href={href}>
-		comprar por whatsapp
+	
+
+	<span> Price {price} <span class="red">No Idefined</span> </span>
+
+<div class="container-btn-group">
+	<a style="pointer-events: none;" class="btn-add-product" href={href}>
+		Añadir
+		<svg  class="icon icon-tabler icon-tabler-shopping-bag-plus"
+		 width="26" 
+		 height="26"
+		  viewBox="0 0 24 24"
+		   stroke-width="1.5"
+		    stroke="#ffffff"
+			 fill="none" 
+			 stroke-linecap="round" 
+			 stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M12.5 21h-3.926a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304h11.339a2 2 0 0 1 1.977 2.304l-.263 1.708" />
+			<path d="M16 19h6" />
+			<path d="M19 16v6" />
+			<path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+		  </svg>
+</a>
+
+<a class="whatsapp-button" href={hrefW}>
+		WahatsApp
 		<svg  class="icon icon-tabler icon-tabler-brand-whatsapp" 
 		width="26"
 		 height="26"
@@ -39,12 +63,15 @@ const {src , href, title, body , price } = Astro.props;
 			<path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
 		  </svg>
 	</a>
+  </div>
 </div>
 
 <style>
 	.link-card{
 		width: clamp(270px , 90% , 310px);
-		height: 350px;
+		/* width: ; */
+		/* height: 350px; */
+		height: auto;
 		background:#ffffff;
 		padding: 10px;
 		box-sizing: border-box;
@@ -52,6 +79,50 @@ const {src , href, title, body , price } = Astro.props;
 		border-radius: 8px;
 		display: grid;
 
+	
+
+		.container-btn-group{
+			margin-top: 5px;
+			position: relative;
+			display: flex;
+			gap: 15px;
+			justify-content: center;
+			
+			.message-alert{
+			display: none;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+
+
+			p{
+				font-size: 30px;
+				color: red;
+			}
+		}
+
+		.btn-add-product{
+			text-decoration: none;
+			color: #ffffff;
+			padding: 10px;
+			background-color: #198bf5;
+			display: flex;
+            justify-content: center;
+           align-items: center;
+			box-sizing: border-box;
+			gap: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+			text-align: center;
+			font-size: 15px;
+			height: max-content;
+			width: max-content;
+			border-radius: 10px;
+			
+			&:hover {
+      background-color: #0069cb;
+    }
+		}
+ 
 		.whatsapp-button {
 			text-decoration: none;
 			color: #ffffff;
@@ -60,8 +131,8 @@ const {src , href, title, body , price } = Astro.props;
 			display: flex;
             justify-content: center;
            align-items: center;
-		   gap: 5px;
 			box-sizing: border-box;
+			gap: 5px;
 			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 			text-align: center;
 			font-size: 15px;
@@ -73,6 +144,16 @@ const {src , href, title, body , price } = Astro.props;
       background-color: #1DA851;
     }
 		}
+	}
+
+	span{
+		font-weight: bold;
+
+		.red{
+			color: rgba(255, 0, 0, 0.685);
+		}
+	}
+
 }
 
 .container-img{
@@ -91,7 +172,7 @@ position: relative;
 			&:hover{
 				scale: 1.1;
 			}
-			}
+	   }
 }
 
 

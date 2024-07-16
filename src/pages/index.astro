@@ -1,14 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Slider from '../components/slider.astro';
+import Calculadora from '../components/calculador.astro';
 import Desplegable from '../components/desplegable.astro';
+import GymCard from '../components/gymCard.astro';
+import Wasap from '../components/wasap.astro';
+
+import Cardcursos from '../components/cardCursos.astro'
 
 
 ---
 
 <Layout  title="Planes Power Building 2.0">
 
+    <Wasap/>
+
     <section class="sect-element-gruop-main">
+
+        <div class="content-img-bg">
 
        
 
@@ -20,6 +28,8 @@ import Desplegable from '../components/desplegable.astro';
                 <a class="btn-click-Start-Now" href="#">¡EMPIEZA HOY!</a>
             </div>
         </div>
+
+    </div>
               
     </section>
 
@@ -41,29 +51,23 @@ import Desplegable from '../components/desplegable.astro';
                         <ul>  <li> ⁠Ganas una fuerza que asusta.</li>
                             <li>⁠Masa muscular como nunca imaginaste.</li>
                             <li>⁠No hay secretos, solo técnicas que funcionan.</li>
-                            <li>⁠Tips reales, sin tonterías, de los que saben de esto.</li></ul>
+                            <li>⁠Tips reales, sin tonterías, de los que saben de esto.</li>
+                        </ul>
                       
                     </div>
-            </div> 
 
+                    <div class="card-contact">      
+                         <Cardcursos
+                        href="https://wa.me/50589600977"
+                        title="¿Te gustaria recibir mas informacion?"
+                        body='Contactar por WhatsApp'
+                       />
+                    </div>
+            </div> 
 </section>
 
-
-<!-- esto esta en proceso -->
-   
-<!-- <section class="sect-element-gruop-main">
-
-        <div class="container-result"><h2>Resultados</h2></div>
-   <div class="center">
-    <h1>hola
-      </h1>
-    </div>    
-      
-</section> -->
-
-    <section class="sect-element-gruop-main  red">
-
-
+<section class="sect-element-gruop-main  red">
+    
     <div class="container-elements-div  bg-independiente-div-ul-list">
 
         <div class="container-element-ul-list">
@@ -76,22 +80,42 @@ import Desplegable from '../components/desplegable.astro';
               <li>✔︎ CALCULADORA DE CALORÍAS</li>
               <li> ✔︎ UN PLAN PARA HOMBRE Y OTRO PARA MUJER</li>
        </ul>
+
+       <article>
+        <p>No pierdas más tiempo. Únete a la familia de Power Building 2.0 y empieza a destrozarlo en el gimnasio.
+            ¿Listo para el cambio real?</p>
+        </article> 
       </div>
-        
+
+      
+
+
+     
 </div>
 
 </section >
 
-        <article>
-        <p>¿Te preguntas si esto funciona? Olvídate de preguntas,
-             escucha a nuestros hermanos de hierro que ya lo vivieron. 
-             No somos gurús, somos gente real que ha conseguido resultados reales.</p>
-        </article>
 
-         <article>
-        <p>No pierdas más tiempo. Únete a la familia de Power Building 2.0 y empieza a destrozarlo en el gimnasio.
-            ¿Listo para el cambio real?</p>
-        </article>
+<!-- esto esta en proceso -->
+   
+<section class="sect-element-gruop-main">
+
+    <div class="container-elements-div">
+        <div class="container-result">
+            <GymCard/>
+           </div>
+    
+            <Cardcursos
+           href="/store"
+           title="¡No dudes en visitar nuestra Tineda!"
+           body='Visitar Ahora'
+          />
+      </div>
+ 
+</section>
+
+   
+
  <section class="sect-element-gruop-main">
 
         <div class="faq">
@@ -106,10 +130,27 @@ import Desplegable from '../components/desplegable.astro';
 
 <style>
     
+
     .sect-element-gruop-main{
         width: 100%;
         height: 100vh;
-        background-color: #080808;
+        display: flex;
+        justify-content: center;
+        
+
+
+        .content-img-bg{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            background-image: url(/public/img/ans.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
 
 
         /* .bg-independiente-div-ul-list{
@@ -124,8 +165,8 @@ import Desplegable from '../components/desplegable.astro';
         padding: 1rem;
         box-sizing: border-box;
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        gap: 20px;
         
 
         h1{
@@ -180,21 +221,30 @@ p{
     .btn-click-Start-Now{
         padding: 20px 30px 20px  30px ;
         text-align: center;
-        border-radius: 8px;
-        background-color: #FFCC33;
-        background-color: rgb(21, 125, 228);
+      
+        border: 2px solid #fff;
         text-decoration: none;
-        color: #000;
-        font-weight: bold ;
-    
+        color: #ffffff;
+        box-shadow: inset 0 0 0 0 #ffffff;
+  -webkit-transition: ease-out .3s;
+  -moz-transition: ease-out .3s;
+  transition: ease-out .4s;
+  border-radius: 2 px;
+
+  
+        &:hover{
+            box-shadow: inset 400px 0 0 0 #f3f3f3;
+            color: #333;
+        }
     }
 }
+
+
 
 .container-list-beneficio{
     max-width: 700px;
     display: flex;
     flex-direction: column;
-    background-color: none;
 
     ul {
     padding: 20px;
@@ -212,10 +262,10 @@ p{
         }
 .container-result{
         width: 100%;
+        height: 100%;
         display: flex;
-        align-items: center;
         justify-content: center;
-        background: #fff;
+        gap: 10px;
     }
 
 
@@ -228,6 +278,9 @@ background-size: cover;
 
 .container-element-ul-list{
         width: 100%;
+        height: 100%;
+        /* display: grid;
+        place-content: center; */
 
 
         ul{
@@ -237,9 +290,18 @@ background-size: cover;
                 text-decoration: none;
                 list-style: none;
                 font-size: 16px;
+                margin-bottom: 20px;
             }
         }
 
+      
+
+    article{
+        background: #f1f1f1;
+        padding: 5px;
+        border-radius: 5px;
+        color: #333;
+    }
 
 }
 
@@ -261,7 +323,16 @@ background-size: cover;
 
     
 
+.center{
+    margin-top: 10px;
+    height: 50%;
 
+    width: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: red;
+    pointer-events: none;
+}
 
     
 
@@ -404,7 +475,7 @@ display: none;
     section{
         width: 100%;
         height: 100vh;
-        background-color: #000000;
+        /* background-color: #000000; */
  
     }
 
@@ -482,11 +553,7 @@ ul {
         
         padding: 20px 30px 20px  30px ;
         text-align: center;
-        border-radius: 8px;
-        background-color: #FFCC33;
-        background-color: rgb(21, 125, 228);
         text-decoration: none;
-        color: #000;
         font-weight: bold ;
         margin-top: 10px;
     }

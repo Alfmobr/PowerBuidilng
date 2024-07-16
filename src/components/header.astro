@@ -15,7 +15,7 @@ console.log('hola')
 					 height="36" 
 					 viewBox="0 0 24 24"
 					  stroke-width="1.5" 
-					  stroke="#ffffff"
+					  stroke="#fff"
 					   fill="none" 
 					   stroke-linecap="round" 
 					   stroke-linejoin="round">
@@ -53,7 +53,7 @@ console.log('hola')
 				 height="36"
 				viewBox="0 0 24 24"
 				stroke-width="1.5"
-				stroke="#ffffff"
+				stroke="#fff"
 					fill="none"
 					stroke-linecap="round"
 					stroke-linejoin="round">
@@ -137,6 +137,8 @@ console.log('hola')
 		img{
 		width: 50px;
 		background-size: contain;
+		background: #fff;
+		border-radius: 100px;
 	}
 	}
 
@@ -154,9 +156,10 @@ console.log('hola')
 		opacity: 0;
 		align-items: start;
 		transition: opacity .4s ease-in-out;
+		box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 		pointer-events: none;
 		transform: translateX(300px);
-		transition: transform .5s ease-in-out;
+		transition:transform .5s cubic-bezier(0.98, 0.03, 0, 1.01);
 		
 		
 
