@@ -14,5 +14,3 @@ habran dos cursos uno para mujer y otro hombre.
 por ahora solo es inforativa, luego se hara una web dinamica todo depende. 
 
 =======
-# GymNC
->>>>>>> 41562d1d67a10b3f5594cf74223ddcf81a98aae5
