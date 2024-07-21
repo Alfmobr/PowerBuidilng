@@ -1,1 +1,0 @@
-import"./hoisted.DEYTc_nk.js";const t=document.querySelector(".shopping-cart");window.addEventListener("scroll",()=>{const n=t.getBoundingClientRect().top,e=window.innerHeight;n<e&&t.classList.add("visible")});
