@@ -2,7 +2,7 @@
 
 ---
 
-<a href="." class="shopping-cart" target="_blank">
+<a href="#" class="shopping-cart" target="_blank">
 
       <svg class="icon icon-tabler icon-tabler-shopping-cart" 
       width="26"
@@ -38,44 +38,41 @@
       height: 60px;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: center;  
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
       text-decoration: none;
       font-size: 30px;
       z-index: 1;
       opacity: 0;
-      transition: opacity 1s ease-out;
-      animation: shadow-animation auto linear both;
-            animation-timeline: scroll(root block) ;
-            animation-range: entry 1000px height 100%;
+      transition: opacity .3s ease-out;
+
   }
-    
-
-    .whatsapp-button:hover {
-      background-color: #1DA851;
-    }
-
-
-
   .shopping-cart.visible {
-    
     opacity: 1;
   }
   </style>
 
 <script>
-  const content = document.querySelector('.shopping-cart')
+const content = document.querySelector('.shopping-cart');
 
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const viewportHeight = window.innerHeight;
+  const documentHeight = document.documentElement.scrollHeight;
 
+  // 10% del alto de la página
+  const scrollThreshold = documentHeight * 0.1;
+  
+    // 40% del 80% del alto de la página
+  const fadeOutThreshold = scrollThreshold * 40;
 
-  window.addEventListener('scroll', () => {
-    const contentTop = content.getBoundingClientRect().top;
-    const viewportHeight = window.innerHeight;
+  if (scrollTop >= scrollThreshold) {
+    content.classList.add('visible');
+  } else if (scrollTop <= fadeOutThreshold) {
+    content.classList.remove('visible');
+  }
+});
 
-    if (contentTop < viewportHeight) {
-      content.classList.add('visible');
-    }
-  });
 
 
 
