@@ -1,0 +1,81 @@
+---
+interface Props {
+	title: string;
+	href: string;
+	body : string;
+	hoverStyle?: string;
+	widthMax?: string; 
+
+}
+const { href, title, body, hoverStyle, widthMax} = Astro.props;
+
+console.log('hoverStyle:', hoverStyle);
+---
+
+<div class=`link-card  ${widthMax}`> 
+
+	<h2 style="color: #333;  font-size: 20px; ">
+		{title}
+	</h2>
+
+<div class="container-btn-group">
+	<a class={`btn-add-product  ${hoverStyle} `} href={href}>
+		{body}  
+		<slot/>
+	</a>
+  </div>
+</div>
+
+<style>
+	.link-card{
+		/* width: clamp(300px , 90% , 610px); */
+		width: auto;
+		height: auto;
+		background:#ffffff;
+		box-sizing: border-box;
+		padding: 10px;
+		box-sizing: border-box;
+		border-radius: 8px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 10px;
+		box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+		
+
+
+		.container-btn-group{
+			
+
+		.btn-add-product{
+			text-decoration: none;
+			color: #ffffff;
+			padding: 10px;
+			background-color: #198bf5;
+			display: flex;
+           align-items: center;
+			box-sizing: border-box;
+			gap: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+			text-align: center;
+			font-size: 15px;
+			height: max-content;
+			width: max-content;
+			border-radius: 10px;
+			
+			&:hover {
+      background-color: #1DA851;
+    }
+		}
+
+  .hover-green:hover {
+    background-color: rgb(0, 70, 128);
+  }
+
+  .width-200px{
+	width: 20px;
+  }
+}
+	}
+</style>

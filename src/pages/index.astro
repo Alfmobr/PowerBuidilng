@@ -1,605 +1,502 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Desplegable from '../components/desplegable.astro';
-import GymCard from '../components/gymCard.astro';
-import Wasap from '../components/wasap.astro';
-
-import Cardcursos from '../components/cardCursos.astro'
-
+import Layout from "../layouts/Layout.astro";
+import Desplegable from "../components/Acordion.astro";
+import GymCard from "../components/gymCard.astro";
+import Wasap from "../components/wasap.astro";
+import BtnLink from "../components/btnlink.astro";
+import Btnlink from "../components/btnlink.astro";
 
 ---
 
-<Layout  title="Planes Power Building 2.0">
+<Layout title="Planes Power Building 2.0">
 
-    <Wasap/>
+  
+    <Wasap />
 
     <section class="sect-element-gruop-main">
-
         <div class="content-img-bg">
-
-       
-
-        <div class="container-elements-div">
-            <h1> <span>Power</span> <br>Building 2.0 </h1>
-            <p class="style-p-center-index-mobile">¡TU CAMINO PARA ROMPER LÍMITES!</p>
-
-            <div class="container-btn">
-                <a class="btn-click-Start-Now" href="#">¡EMPIEZA HOY!</a>
+            <div class="container-elements-div">
+                <h1><span>Power</span> <br />Building 2.0</h1>
+                <p class="style-p-center-index-mobile  style-p-center-index-destok">
+                    ¡TU CAMINO PARA ROMPER LÍMITES!
+                </p>
+                <div class="container-btn">
+                    <a class="btn-click-Start-Now" href="#">¡EMPIEZA HOY!</a>
+                </div>
             </div>
         </div>
-
-    </div>
-              
     </section>
 
     <section class="sect-element-gruop-main">
         <div class="container-elements-div">
-
             <div class="container-list-beneficio">
-           <h3>GYM FITNESS</h3>
-
-         <p >¿Qué estás esperando, crack? Si estás harto de dar vueltas en el 
-            gimnasio sin resultados reales, 
-                Power Building 2.0 es tu solución. Aquí no te vamos a endulzar la píldora,
-                 esto es entrenamiento de verdad, sin trucos ni rodeos.</p>
-
-                    <h3>¿Qué te Ofrezco?</h3>
-
-
-                   
-                        <ul>  <li> ⁠Ganas una fuerza que asusta.</li>
-                            <li>⁠Masa muscular como nunca imaginaste.</li>
-                            <li>⁠No hay secretos, solo técnicas que funcionan.</li>
-                            <li>⁠Tips reales, sin tonterías, de los que saben de esto.</li>
-                        </ul>
-                      
-                    </div>
-
-                    <div class="card-contact">      
-                         <Cardcursos
-                        href="https://wa.me/50589600977"
-                        title="¿Te gustaria recibir mas informacion?"
-                        body='Contactar por WhatsApp'
-                       />
-                    </div>
-            </div> 
-</section>
-
-<section class="sect-element-gruop-main  red">
-    
-    <div class="container-elements-div  bg-independiente-div-ul-list">
-
-        <div class="container-element-ul-list">
-            <h3>ENTRENAMIENTO + RECOMENDACIONES NUTRICIONALES</h3>
-        <ul>
-              <li> ✔︎ 1 MES DE ENTRENAMIENTO Y RECOMENDACIONES NUTRICIONALES</li>
-              <li> ✔︎  RUTINAS  DE ENTRENAMIENTO</li>
-              <li>✔︎ ENTRENAMINTO PERSONAL</li>
-              <li> ✔︎ + 50 EJEMPLOS DE COMIDA</li>
-              <li>✔︎ CALCULADORA DE CALORÍAS</li>
-              <li> ✔︎ UN PLAN PARA HOMBRE Y OTRO PARA MUJER</li>
-       </ul>
-
-       <article>
-        <p>No pierdas más tiempo. Únete a la familia de Power Building 2.0 y empieza a destrozarlo en el gimnasio.
-            ¿Listo para el cambio real?</p>
-        </article> 
-      </div>
-
-      
-
-
-     
-</div>
-
-</section >
-
-
-<!-- esto esta en proceso -->
-   
-<section class="sect-element-gruop-main">
-
-    <div class="container-elements-div">
-        <div class="container-result">
-            <GymCard/>
-           </div>
-    
-            <Cardcursos
-           href="/store"
-           title="¡No dudes en visitar nuestra Tineda!"
-           body='Visitar Ahora'
-          />
-      </div>
- 
-</section>
-
-   
-
- <section class="sect-element-gruop-main">
-
-        <div class="faq">
-            <Desplegable/>
+              
+                <h3>GYM FITNESS</h3>
+                <p>
+                    ¿Qué estás esperando, crack? Si estás harto de dar vueltas
+                    en el gimnasio sin resultados reales, Power Building 2.0 es
+                    tu solución. Aquí no te vamos a endulzar la píldora, esto es
+                    entrenamiento de verdad, sin trucos ni rodeos.
+                </p>
+                <h3>¿Qué te Ofrezco?</h3>
+                <ul>
+                    <li>⁠Ganas una fuerza que asusta.</li>
+                    <li>⁠Masa muscular como nunca imaginaste.</li>
+                    <li>⁠No hay secretos, solo técnicas que funcionan.</li>
+                    <li>
+                        ⁠Tips reales, sin tonterías, de los que saben de esto.
+                    </li>
+                </ul>
+            </div>
+            <div class="card-contact">
+                <Btnlink
+                    href="https://wa.me/50589600977"
+                    title="¿Te gustaría recibir más información?"
+                    body="Contactar por WhatsApp"
+                > <svg  class="icon icon-tabler icon-tabler-brand-whatsapp" 
+                // width="36"
+                //  height="36"
+                  viewBox="0 0 24 24" 
+                  stroke-width="1.5" 
+                  stroke="#fff" 
+                  fill="none" 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                    </svg> </Btnlink>
+            </div>
         </div>
-     
-</section>
+    </section>
 
+    <section class="sect-element-gruop-main red">
+        <div class="container-elements-div bg-independiente-div-ul-list">
+            <div class="container-element-ul-list">
+                <h3>ENTRENAMIENTO + RECOMENDACIONES NUTRICIONALES</h3>
+                <ul>
+                    <li>
+                        ✔︎ 1 MES DE ENTRENAMIENTO Y RECOMENDACIONES
+                        NUTRICIONALES
+                    </li>
+                    <li>✔︎ RUTINAS DE ENTRENAMIENTO</li>
+                    <li>✔︎ ENTRENAMIENTO PERSONAL</li>
+                    <li>✔︎ + 50 EJEMPLOS DE COMIDA</li>
+                    <li>✔︎ CALCULADORA DE CALORÍAS</li>
+                    <li>✔︎ UN PLAN PARA HOMBRE Y OTRO PARA MUJER</li>
+                </ul>
+                <article>
+                    <p>
+                        No pierdas más tiempo. Únete a la familia de Power
+                        Building 2.0 y empieza a destrozarlo en el gimnasio.
+                        ¿Listo para el cambio real?
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-<!-- </Layout> -->
+    <section class="sect-element-gruop-main">
+        <div class="container-elements-div">
+            <div class="container-result">
+                <GymCard />
 
+                <BtnLink
+                href="/store"
+                title="¡Mira nuestro nuevos Productos 'SUPLEMENTOS' !"
+                body="Visitar Tienda "
+                hoverStyle="hover-green"
+            >  <svg  class="icon icon-tabler icon-tabler-arrow-move-right"
+            width="36" 
+            height="36"
+             viewBox="0 0 24 24" 
+             stroke-width="1.5"
+              stroke="#ffffff" 
+              fill="none" 
+              stroke-linecap="round"
+               stroke-linejoin="round">
+             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+             <path d="M11 12h10"/>
+             <path d="M18 9l3 3l-3 3"/>
+             <path d="M7 12a2 2 0 1 1 -4 0a2 2 0 0 1 4 0z"/>
+           </svg> </BtnLink> 
+
+           <div class="imgbg"></div>
+            </div>
+ 
+        </div>
+    </section>
+
+    <section class="sect-element-gruop-main">
+        <div class="container-elements-div">
+        <div class="faq">
+            <Desplegable />
+        </div>
+        </div>
+    </section>
+</Layout>
 
 <style>
-    
-
-    .sect-element-gruop-main{
+    .sect-element-gruop-main {
         width: 100%;
         height: 100vh;
         display: flex;
         justify-content: center;
-        
 
-
-        .content-img-bg{
+        .content-img-bg {
             width: 100%;
             height: 100%;
             box-sizing: border-box;
             background-image: url(/public/img/ans.jpg);
             background-repeat: no-repeat;
-            background-size: cover;   
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
-
         }
+        .container-elements-div {
+            width: 100%;
+            padding: 1rem;
+            box-sizing: border-box;
+            display: grid;
+            /* display: flex;
+            flex-direction: column;
+            gap: 20px; */
 
+            h1 {
+                color: #ffcc33;
+                font-size: 36px;
+                text-align: center;
+                font-weight: 800;
 
-        /* .bg-independiente-div-ul-list{
-            height: 100%;
-            background-color: rgba(115, 115, 115, 0.738);
-        } */
-        
+                span {
+                    color: rgb(255, 255, 255);
+                    text-shadow:
+                        0px 0px 4px #0659ff,
+                        0px 0px 6px #0659ff,
+                        0px 0px 20px #0659ff,
+                        0px 0px 4px #ffcc33,
+                        0px 0px 6px #ffcc33,
+                        0px 0px 15px #ffcc33;
+                    font-size: 36px;
+                    font-weight: 800;
+                }
+            }
+            h2 {
+                color: #ffffff;
+                font-size: 24px;
+            }
 
-
-        .container-elements-div{
-        width: 100%;
-        padding: 1rem;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        
-
-        h1{
-    color:#FFCC33;  
-   font-size: 36px;
-    text-align: center;
-    font-weight: 800;
-
-    span{
-        color: rgb(255, 255, 255);
-        text-shadow: 
-         0px 0px 4px #0659ff ,
-        0px 0px 6px #0659ff ,
-        0px 0px 20px #0659ff, 
-        0px 0px 4px #FFCC33 ,
-        0px 0px 6px #FFCC33 ,
-        0px 0px 15px #FFCC33;
-        font-size: 36px;
-        font-weight: 800;
-}
-    }
-    h2{
-            color: #ffffff;
-            font-size: 24px;
-          
-        }
-
-        .style-p-center-index-mobile{ 
-    font-weight: bold;
-    margin-bottom: 60px;
-    text-align: center;
-    font-size: 16px;
-}
-
-h3{
-    font-size: 20px;
-    color: #FFCC33;
-    height: max-content;
-}
-
-p{
-        font-size: 16px;
-    line-height: 1.5;
-    }
-
-    .container-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    .btn-click-Start-Now{
-        padding: 20px 30px 20px  30px ;
-        text-align: center;
-      
-        border: 2px solid #fff;
-        text-decoration: none;
-        color: #ffffff;
-        box-shadow: inset 0 0 0 0 #ffffff;
-  -webkit-transition: ease-out .3s;
-  -moz-transition: ease-out .3s;
-  transition: ease-out .4s;
-  border-radius: 2 px;
-
-  
-        &:hover{
-            box-shadow: inset 400px 0 0 0 #f3f3f3;
-            color: #333;
-        }
-    }
-}
-
-
-
-.container-list-beneficio{
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
-
-    ul {
-    padding: 20px;
-    border-radius: 10PX;
-    margin-top: -20px;
-
-    li{
-        margin: 0; 
-        font-size: 15px;
-        text-decoration:underline;
-        line-height: 1.5;
-      }
-   }
-}
-        }
-.container-result{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-
-.red{
-background-image: url(/public/img/barras.jpeg);
-background-image: url(https://adrianherrerocoach.com/wp-content/uploads/2022/08/barbell-on-the-floor.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-.container-element-ul-list{
-        width: 100%;
-        height: 100%;
-        /* display: grid;
-        place-content: center; */
-
-
-        ul{
-          border-radius: 0px;
-          width: auto;
-            li{
-                text-decoration: none;
-                list-style: none;
+            .style-p-center-index-mobile {
+                font-weight: bold;
+                margin-bottom: 60px;
+                text-align: center;
                 font-size: 16px;
-                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: 20px;
+                font-size: 3vh;
+                color: #ffcc33;
+                height: max-content;
+            }
+
+            p {
+                font-size: 16px;
+                line-height:1.5;
+            }
+
+            .container-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .btn-click-Start-Now {
+                    padding: 20px 30px 20px 30px;
+                    text-align: center;
+
+                    border: 2px solid #fff;
+                    text-decoration: none;
+                    color: #ffffff;
+                    box-shadow: inset 0 0 0 0 #ffffff;
+                    -webkit-transition: ease-out 0.3s;
+                    -moz-transition: ease-out 0.3s;
+                    transition: ease-out 0.4s;
+                    border-radius: 2 px;
+
+                    &:hover {
+                        box-shadow: inset 400px 0 0 0 #f3f3f3;
+                        color: #333;
+                    }
+                }
+            }
+
+            .container-list-beneficio {
+                max-width: 700px;
+                display: grid;
+                ul {
+                    padding: 0px;
+                    border-radius: 10px;
+                    display: grid;
+                    gap: 10px;
+                 
+
+                    li {
+                        margin: 0;
+                        font-size: 16px;
+                        text-decoration: underline;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+        .container-result {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            z-index: 99;
+
+
+            .imgbg{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-image: url(/public/img/paredAM.jpg);
+                background-image: url(/public/img/puas.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                opacity: .03;
+                z-index: -999;
+
             }
         }
 
-      
+        .container-element-ul-list {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
 
-    article{
-        background: #f1f1f1;
-        padding: 5px;
-        border-radius: 5px;
-        color: #333;
-    }
+            ul {
+                border-radius: 0px;
+                width: auto;
+                display: grid;
+                padding: 0;
+                gap: 30px;
+                
+                li {
+                    text-decoration: none;
+                    list-style: none;
+                    font-size: 16px;
+                }
+            }
 
-}
-
-.faq{
-         width: 100%;
-         height: auto;
-         display: flex;
-         justify-content: center;
-         align-items: center;
+            article {
+                background: #f1f1f1;
+                padding: 5px;
+                height: max-content;
+                border-radius: 5px;
+                color: #333;
+            }
         }
-       
+
+        .faq {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
-
-
-
-
-
-
-    
-
-.center{
-    margin-top: 10px;
-    height: 50%;
-
-    width: auto;
-    overflow: hidden;
-    border-radius: 8px;
-    background-color: red;
-    pointer-events: none;
-}
-
-    
-
-
-      
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-    p span{
-        font-size: 20px;
-        font-weight: 600;
-        font-size: 4vw;
-    }
-
-    .div{ 
-        display: flex;
-    }
-
-    h2{
-        width: 100%;
-        color: #333;
-        font-weight: 800;
-        text-align: center;
-      
-    }
-
- 
-
-    img{
-        width: 400px;
-    }
-
-    .container-img{
-display: none;
-    }
-
-    .imgg{
-        
-        background-size: contain;
-
-    } */
-
-
-    
-	@media screen and (min-width: 801px) {
-
-        h1{
-        color:#FFCC33;  
-    font-size: 2em;
-    /* font-size: 5vw; */
-    text-align: center;
-    margin: 20px 0;
-        font-weight: 800;
-    }
-	
-
-    .container-img{
-        display: block;
-        position: absolute;
-        left:110%; 
-        top: 5%;
-        width: 100%;
-        height: 200px;
-       filter: drop-shadow(0px 0px 20px #333) ;
-    }
-
-    
-    .container-section{
-        background-image: url(/public/img/ans.jpg);
-		background-repeat: no-repeat;
-		background-size: calc(1300px - 100px);    
-    }
-
-    .imgg{
-
-        background-size: contain;
-
-    }
-	}
-
-
-
-
-    /* .product {
-      border: 1px solid #ddd;
-      padding: 20px;
-      margin: 10px;
-      text-align: center;
-    }
-    .product img {
-      max-width: 100%;
-      height: auto;
-    }
-    .product-name {
-      font-size: 1em;
-      margin: 10px 0;
-    }
-    .product-price {
-      color: #007BFF;
-      font-size: 1em;
-    } */
-
-.center{
-    display: grid;
-    place-content: center;
-}
-
-.circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-
-    img{
-        width: 150px;
-        position: absolute;
-        right: 10px;
-    }
-}
-
-.icon{
-    /* position: absolute;
-    top: 0;
-    left: 0; */
-}
-
-    section{
-        width: 100%;
-        height: 100vh;
-        /* background-color: #000000; */
- 
-    }
-
-    .d{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #fff;
-    }
-
-    .element-group-div{
-        width: 100%;
-        padding: 1rem;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-       
-    }
-
- 
-
-     h1{
-    color:#FFCC33;  
-    font-size: 1em;
-    font-size: 1vw;
-    text-align: center;
-    font-weight: 800;
-    /* margin-top: 60px; */
-    }
-
-    span{
-        color: rgb(255, 255, 255);
-        /* text-shadow: 
-         0px 0px 4px #0659ff ,
-        0px 0px 6px #0659ff ,
-        0px 0px 20px #0659ff, 
-        0px 0px 4px #FFCC33 ,
-        0px 0px 6px #FFCC33 ,
-        0px 0px 15px #FFCC33; */
-        font-size: 1em;
-        font-size: 1vw;
-}
-
-.style-p{ 
-    font-weight: bold;
-    margin-bottom: 60px;
-    text-align: center;
-    font-size: 1vw;
-}
-
-.div-buton{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.container-list{
-    display: flex;
-    flex-direction: column;
-}
-ul {
-    font-size: 1vw;
-    padding: 20px;
-    border-radius: 10PX;
-
-    li{
-        margin-bottom: 10px;
-        text-decoration:underline;
-    }
-}
-
-
-    a{
-        
-        padding: 20px 30px 20px  30px ;
-        text-align: center;
-        text-decoration: none;
-        font-weight: bold ;
+    .center {
         margin-top: 10px;
-    }
-    
-     
-    p{
-        font-size: 0.5em;
-    font-size: 1vw;
-    line-height: 1.5;
+        height: 50%;
+
+        width: auto;
+        overflow: hidden;
+        border-radius: 8px;
+        background-color: red;
+        pointer-events: none;
     }
 
-    p span{
-        font-size: 20px;
-        font-weight: 600;
-        font-size: 1vw;
-    }
-
-    .div{
+    @media screen and (min-width: 801px) {
+        .sect-element-gruop-main {
+        height: 100vh;
         display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .content-img-bg {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            background-image: url(/public/img/ans.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display:flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        .container-elements-div {
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 800px;
+
+            h1 {
+                color: #ffcc33;
+                font-size: 46px;
+                text-align: initial;
+                font-weight: 800;
+
+                span {
+                    color: rgb(255, 255, 255);
+                    text-shadow:
+                        0px 0px 4px #0659ff,
+                        0px 0px 6px #0659ff,
+                        0px 0px 20px #0659ff,
+                        0px 0px 4px #ffcc33,
+                        0px 0px 6px #ffcc33,
+                        0px 0px 15px #ffcc33;
+                        font-size: 50px;
+                     font-weight: 800;
+                }
+            }
+            h2 {
+                color: #ffffff;
+                font-size: 24px;
+            }
+
+            .style-p-center-index-destok {
+                font-weight: bold;
+                margin-bottom: 60px;
+                text-align: initial;
+                font-size: 16px;
+            }
+
+            h3 {
+                font-size: 20px;
+                color: #ffcc33;
+                height: max-content;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.5;
+                
+            }
+
+            .container-btn {
+                display: block;
+                align-items: center;
+                justify-content: center;
+
+                .btn-click-Start-Now {
+                    padding: 20px 30px 20px 30px;
+                    text-align: center;
+
+                    border: 2px solid #fff;
+                    text-decoration: none;
+                    color: #ffffff;
+                    box-shadow: inset 0 0 0 0 #ffffff;
+                    -webkit-transition: ease-out 0.3s;
+                    -moz-transition: ease-out 0.3s;
+                    transition: ease-out 0.4s;
+                    border-radius: 2 px;
+
+                    &:hover {
+                        box-shadow: inset 400px 0 0 0 #f3f3f3;
+                        color: #333;
+                    }
+                }
+            }
+
+            .container-list-beneficio {
+                max-width: 700px;
+                display: flex;
+                flex-direction: column;
+
+                ul {
+                    padding: 20px;
+                    border-radius: 10px;
+                    display: grid;
+                    gap: 15px; 
+
+                    li {
+                        margin: 0;
+                        font-size: 15px;
+                        text-decoration: underline;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+        .container-result {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .container-element-ul-list {
+            width: 100%;
+            height: 100%;
+      
+
+            ul {
+                border-radius: 0px;
+                width: auto;
+                gap: 10px;
+                li {
+                    text-decoration: none;
+                    list-style: none;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            article {
+                background: #f1f1f1;
+                padding: 5px;
+                border-radius: 5px;
+                color: #333;
+            }
+        }
+
+        .faq {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
-    h2{
-        width: 100%;
-        color: #333;
-        font-weight: 800;
-        text-align: center;
-        /* font-size: 30px; */
-        font-size: 1vw;
+    .center {
+        margin-top: 10px;
+        height: 50%;
+        width: auto;
+        overflow: hidden;
+        border-radius: 8px;
+        background-color: red;
+        pointer-events: none;
     }
-
-    h3{
-        font-size: 1vw;
-        color: #FFCC33;
-        
-    }
-
-    img{
-        width: 100px;
-    }
-
-    .container-img{
-display: none;
-    }
-
-    .imgg{
-        
-        background-size: contain;
 
     }
 </style>

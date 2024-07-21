@@ -1,7 +1,4 @@
-// function toggleNav() {
-  
 
-// }
 
 function ToggleTranslate (){
 	const hamburguer = document.getElementById('hamburguer');
@@ -14,36 +11,38 @@ function ToggleTranslate (){
 	closed.style.display = (closed.style.display === 'block') ? 'none' : 'block';
 }
 
-// let start = null;
-// const initialPosition = 200;
-// const finalPosition = 0 ;
-// const duration = 10000;
-
-
-
-// function animate (timestamp){
-
-//     const hamburguer = document.getElementById('hamburguer');
-//     hamburguer.style.opacity = (hamburguer.style.opacity === '1') ? '0' : '1';
-//     hamburguer.style.pointerEvents = (hamburguer.style.pointerEvents === 'auto') ? 'none' : 'auto';
-// 	if(!start) start = timestamp;
-// 	const progress = timestamp - start; 
-// 	const progressPorcentage = Math.min(progress / duration, 1);
-
-// 	const translateX = initialPosition + (finalPosition - initialPosition) * progressPorcentage;
-
-// 	hamburguer.style.transform= `translateX(${translateX}px)`;
-
-//     if(progress < duration){
-//         requestAnimationFrame(animate)
-//     }
-// }
-
-
-
 const open = document.getElementById('open');
 open.addEventListener('click', ToggleTranslate)
 
-
 const closed = document.getElementById('closed');
 closed.addEventListener('click', ToggleTranslate);
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburguer = document.getElementById('hamburguer');
+    const open = document.getElementById('open');
+    const closed = document.getElementById('closed');
+
+
+    function handleResize() {
+        if (window.innerWidth >= 768) {
+            hamburguer.style.display = 'flex';
+            hamburguer.style.transform = 'translateX(0px)'; 
+            hamburguer.style.opacity = '1'; 
+            hamburguer.style.pointerEvents = 'auto'; 
+            open.style.display = 'none';
+            closed.style.display = 'none';
+        } else {
+            hamburguer.style.display = 'flex';
+            hamburguer.style.transform = 'translateX(300px)'; 
+            hamburguer.style.opacity = '1';
+            hamburguer.style.pointerEvents = 'none';
+            open.style.display = 'flex';
+            closed.style.display = 'none';
+        }
+    }
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); 
+});

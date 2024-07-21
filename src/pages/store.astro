@@ -1,176 +1,151 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Carrusel from '../components/carrusel.astro';
-import BtnShoppingCart from '../components/btn-shopping-cart.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Carrusel from "../components/carrusel.astro";
+import BtnShoppingCart from "../components/btnShopCart.astro";
 ---
 
 <Layout title="Tienda Power Buildign ">
-    <BtnShoppingCart/>
+    <BtnShoppingCart />
     <section class="degradado-black-white">
-
         <div class="container-b-t">
-        <div class="banner-destok">
-           <Carrusel
-           src='public/img/banner-store.webp'
-             src1='public/img/banner-store.webp'
-               src2='public/img/banner-store.webp'
-                src2='public/img/banner-store.webp'
-                 src2='public/img/banner-store.webp'
-           alt='banner'
-           />
-
-    
+            <div class="banner-destok">
+                <Carrusel
+                    src="/public/img/banner-store.webp"
+                    src1="/public/img/banner-store.webp"
+                    src2="/public/img/banner-store.webp"
+                    src2="/public/img/banner-store.webp"
+                    src2="/public/img/banner-store.webp"
+                    alt="banner"
+                />
+            </div>
         </div>
-    </div>
-    <div class="tittle">
-        <h1 >Power Building STORE</h1>
-
-        
-        <!-- <p><span>¿Quieres ver resultado rapidos? </span>
-            has vendio al lugar correcto, obten ya tu suplemento y disfruta del proceso.
-        </p> -->
-    </div>
+        <div class="tittle">
+            <h1>Power Building STORE</h1>
+        </div>
     </section>
     <section class="container-card">
-
         <div class="item-group">
+            <Card
+                src="/public/img/catalogo/Gold-STANDARD-WHEY.webp"
+                href=""
+                hrefW="https://wa.me/50589600977"
+                title="GOLD STANDARD WHEY 100%"
+                body=" 'Gold Standardd Whey' contiene 2lb de Proteina - 24 gramos de proteína por servicio³ - 5.5 gramos de BCAA´s "
+                price=""
+            />
 
-       
-<Card
-    src='public/img/catalogo/Gold-STANDARD-WHEY.webp'
-	href=""
-    hrefW="https://wa.me/50589600977"
-	title="GOLD STANDARD WHEY 100%"
-	body=" 'Gold Standardd Whey' contiene 2lb de Proteina - 24 gramos de proteína por servicio³ - 5.5 gramos de BCAA´s "
-    price = ''
-	/>
+            <Card
+                src="/public/img/catalogo/bpi-SPORT-WHEY-HD.webp"
+                href=""
+                hrefW="https://wa.me/50589600977"
+                title="BPI SPORT WHEY HD"
+                body="Ayuda a la recuperacion muscular. Previene el catabolismo. Mejora la construccion muscular. 25g de proteinas."
+                price=""
+            />
 
-<Card
-    src='public/img/catalogo/bpi-SPORT-WHEY-HD.webp'
-    href=""
-     hrefW="https://wa.me/50589600977"
-    title="BPI SPORT WHEY HD"
-    body="Ayuda a la recuperacion muscular. Previene el catabolismo. Mejora la construccion muscular. 25g de proteinas."
-    price = ''
-/>
+            <Card
+                src="/public/img/catalogo/ISO-100.webp"
+                href=""
+                hrefW="https://wa.me/50589600977"
+                title="ISO 100 HYDROLIZED"
+                body="Powder whey protein insolate, 25g de pronteina de 1.34lb/610g"
+                price=""
+            />
 
-<Card
-src='public/img/catalogo/ISO-100.webp'
-href=""
- hrefW="https://wa.me/50589600977"
-title="ISO 100 HYDROLIZED"
-body="Powder whey protein insolate, 25g de pronteina de 1.34lb/610g"
-price = ''
-/>
- 
-<Card
-src='public/img/catalogo/ISO-PHORM.webp'
-href=""
- hrefW="https://wa.me/50589600977"
-title="ISO PHORM"
-body=" Es una proteína de suero de leche hidrolizada de alta calidad. Cada porción contiene 25g de proteína y ayudar a alcanzar las necesidades diarias de proteínas."
-price = ''
-/>
-<!-- <legend>Cretanina</legend> -->
-<Card 
-src='public/img/catalogo/METANDROSTENOLONA.webp'
-href=""
- hrefW="https://wa.me/50589600977"
-title="METANDROSTENLONA"
-body=" se caracteriza por poseer propiedades anabolizantes y androgénicas, contiene 100 tab de 10 mg,  ayuda a la ganancias muscular rapidamente "
-price = ""
-/>
+            <Card
+                src="/public/img/catalogo/ISO-PHORM.webp"
+                href=""
+                hrefW="https://wa.me/50589600977"
+                title="ISO PHORM"
+                body=" Es una proteína de suero de leche hidrolizada de alta calidad. Cada porción contiene 25g de proteína y ayudar a alcanzar las necesidades diarias de proteínas."
+                price=""
+            />
+   
+            <Card
+                src="/public/img/catalogo/METANDROSTENOLONA.webp"
+                href=""
+                hrefW="https://wa.me/50589600977"
+                title="METANDROSTENLONA"
+                body=" se caracteriza por poseer propiedades anabolizantes y androgénicas, contiene 100 tab de 10 mg,  ayuda a la ganancias muscular rapidamente "
+                price=""
+            />
 
-<Card
-src='public/img/catalogo/OXANDROPLEX.webp'
-href=""
- hrefW="https://wa.me/50589600977"
-title="OXANDROPLEX"
-body="Aumento de la masa muscular: 60 tab de 10 mg  lo que conduce a un mayor crecimiento muscular , pérdida de grasa y mejora del rendimiento físico."
-price = ''
-/>
+            <Card
+                src="/public/img/catalogo/OXANDROPLEX.webp"
+                href=""
+                hrefW="https://wa.me/50589600977"
+                title="OXANDROPLEX"
+                body="Aumento de la masa muscular: 60 tab de 10 mg  lo que conduce a un mayor crecimiento muscular , pérdida de grasa y mejora del rendimiento físico."
+                price=""
+            />
 
-<Card
-src='public/img/catalogo/PERFECT-BODY.webp'
-href=""
- hrefW="https://wa.me/50589600977"
-title="PERFECT BOOtY"
-body="Ideal para el incremento de masa muscular en mujeres, no provoca viralización, ocupado por muchas atletas para incrementar la zona del Glúteo y de tus piernas"
-price = ''
-/>
-<Card
-src='public/img/catalogo/TESTEX-Depot-250.webp'
-href=""
- hrefW="https://wa.me/50589600977"
-title="TESTEX DEPOT 250"
-body="Solucion inyectable 2ml: Mejorar el rendimiento en disciplinas de fuerza y potencia, gracias a su efecto positivo sobre las ganancias en fuerza, hipertrofia, '"
-price = ''
-/>
-
-
- 
-    </section>
-<!-- <article>
+            <Card
+                src="/public/img/catalogo/PERFECT-BODY.webp"
+                href=""
+                hrefW="https://wa.me/50589600977"
+                title="PERFECT BOOtY"
+                body="Ideal para el incremento de masa muscular en mujeres, no provoca viralización, ocupado por muchas atletas para incrementar la zona del Glúteo y de tus piernas"
+                price=""
+            />
+            <Card
+                src="/public/img/catalogo/TESTEX-Depot-250.webp"
+                href=""
+                hrefW="https://wa.me/50589600977"
+                title="TESTEX DEPOT 250"
+                body="Solucion inyectable 2ml: Mejorar el rendimiento en disciplinas de fuerza y potencia, gracias a su efecto positivo sobre las ganancias en fuerza, hipertrofia, '"
+                price=""
+            />
+        </div>
+        <!-- <article>
     <h3>fin</h3>
 </article> -->
+    </section>
 
-</Layout>
-
-<style>
-
-    legend{
-        border-bottom: 1px solid #0808085f;
-        width: 100%;
-        color: #000;
-        padding-left: 30px;
-        font-size: 20px;
-        margin-top: 20px;
-    }
-
-.degradado-black-white{
-    height: 70vh;
-    background-color: #080808;
-}
+    <style>
 
 
-    section{
-        width: 100%;
-        height: 100vh;
-        background-color: #ffffff;
-        padding: 10px 0px 10px 0px;
-    }
-    .container-card{
-        height: 100%;
-        display: grid;
-        place-items: center;
-    }
-    .item-group{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap; 
-        justify-content: center;
-        gap: 9px;
-        overflow-x: scroll;
-    }
-
-    .banner-destok{
-        width: 80%;
-        height: 180px;
-        position: relative;
-        display: block;
-     
-        img{
-            width:100%;
-            height: 100%;
-            object-fit:contain;
-            display: block; 
-
+        .degradado-black-white {
+            height: 70vh;
+            
+            background-color: #080808;
         }
-    }
 
-    
-    .container-b-t{
+        section {
+            width: 100%;
+            height: 100vh;
+            background-color: #ffffff;
+            padding: 10px 0px 10px 0px;
+        }
+        .container-card {
+            height: 100%;
+            display: grid;
+            place-items: center;
+        }
+        .item-group {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 9px;
+            overflow-x: scroll;
+        }
+
+        .banner-destok {
+            width: 80%;
+            height: 180px;
+            position: relative;
+            display: block;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: block;
+            }
+        }
+
+        .container-b-t {
             width: 100%;
             display: flex;
             padding-top: 10px;
@@ -178,113 +153,103 @@ price = ''
             justify-content: center;
             flex-direction: column;
             gap: 25px;
-          
         }
 
-    .tittle{
-        width: 100%;
-        margin-top: 30px;
-        h1{
-            font-size: clamp(29px , 2.5rem , 3rem);
-            color: #ffffff;
-            text-align: center;
+        .tittle {
+            width: 100%;
             margin-top: 30px;
-        }
-        p{
-            max-width: 600px;
-            font-size: 3vw;
-            font-size: 18px;
-            padding-left: 10px;
+            h1 {
+                font-size: clamp(29px, 2.5rem, 3rem);
+                color: #ffffff;
+                text-align: center;
+                margin-top: 30px;
+            }
+            p {
+                max-width: 600px;
+                font-size: 3vw;
+                font-size: 18px;
+                padding-left: 10px;
 
-
-            span{
-               
-                font-weight: bold;
-                color: #FFE651;
-                font-size: 20px;
-                /* font-size: clamp(20px , .5rem , 25px); */
+                span {
+                    font-weight: bold;
+                    color: #ffe651;
+                    font-size: 20px;
+                    /* font-size: clamp(20px , .5rem , 25px); */
+                }
             }
         }
-    }
 
-    
-	@media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
+            section {
+                width: 100%;
+                height: 100vh;
+                background-color: transparent;
+                padding: 10px 0px 10px 0px;
+            }
+            .container-card {
+                height: 100%;
+                display: grid;
+                place-items: center;
+            }
+            .item-group {
+                width: 90%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 9px;
+                overflow-x: scroll;
+            }
 
-        section{
-        width: 100%;
-        height: 100vh;
-        background-color: transparent;
-        padding: 10px 0px 10px 0px;
-    }
-    .container-card{
-        height: 100%;
-        display: grid;
-        place-items: center;
-    }
-    .item-group{
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap; 
-        justify-content: center;
-        gap: 9px;
-        overflow-x: scroll;
-    }
+            .banner-destok {
+                width: 40%;
+                height: 180px;
+                position: relative;
+                display: block;
 
-    .banner-destok{
-        width: 100%;
-        height: 180px;
-        position: relative;
-        display: block;
-     
-        img{
-            width:100%;
-            height: 100%;
-            object-fit:contain;
-            display: block; 
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
 
-        }
-    }
+            .container-b-t {
+                width: 100%;
+                display: flex;
+                padding-top: 10px;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 25px;
+            }
 
-    
-    .container-b-t{
-            width: 100%;
-            display: flex;
-            padding-top: 10px;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 25px;
-          
-        }
+            .tittle {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1 {
+                    /* font-size: clamp(2rem , 2.5rem , 3rem); */
+                    font-size: 50px;
+                    color: #ffe651;
+                    color: #9cf23c;
+                }
+                p {
+                    max-width: 600px;
+                    font-size: 3vw;
+                    font-size: 18px;
+                    padding-left: 10px;
 
-    .tittle{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        h1{
-            /* font-size: clamp(2rem , 2.5rem , 3rem); */
-            font-size: 50px;
-            color: #FFE651;
-            color: #9CF23C;
-        }
-        p{
-            max-width: 600px;
-            font-size: 3vw;
-            font-size: 18px;
-            padding-left: 10px;
-
-
-            span{
-               
-                font-weight: bold;
-                color: #FFE651;
-                font-size: 20px;
-                /* font-size: clamp(20px , .5rem , 25px); */
+                    span {
+                        font-weight: bold;
+                        color: #ffe651;
+                        font-size: 20px;
+                        /* font-size: clamp(20px , .5rem , 25px); */
+                    }
+                }
             }
         }
-    }
-}
-
-</style>
+    </style>
+    </Layout>
