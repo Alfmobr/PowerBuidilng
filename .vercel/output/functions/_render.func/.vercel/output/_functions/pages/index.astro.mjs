@@ -1,9 +1,9 @@
 import { a as createComponent, r as renderTemplate, m as maybeRenderHead, e as renderComponent } from '../chunks/astro/server_DavV_YwI.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../chunks/Layout_Clw9_bYv.mjs';
+import { $ as $$Layout } from '../chunks/Layout_BEQ59uJr.mjs';
 import 'clsx';
 /* empty css                                 */
-import { $ as $$Btnlink } from '../chunks/btnlink_DeYF_UpR.mjs';
+import { $ as $$Btnlink } from '../chunks/btnlink_CubhwNK-.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Acordion = createComponent(($$result, $$props, $$slots) => {
@@ -41,11 +41,58 @@ const $$GymCard = createComponent(($$result, $$props, $$slots) => {
 }, "C:/Users/frede/Desktop/PortableGit/Gym/src/components/gymCard.astro", void 0);
 
 const $$Wasap = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${maybeRenderHead()}<a href="https://wa.me/50589600977" class="whatsapp-button" target="_blank" data-astro-cid-vb4js7qx> <svg class="icon icon-tabler icon-tabler-brand-whatsapp" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-vb4js7qx> <path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-cid-vb4js7qx></path> <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" data-astro-cid-vb4js7qx></path> <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" data-astro-cid-vb4js7qx></path> </svg> </a> `;
+  return renderTemplate`<!-- ---
+
+---
+
+<a href="https://wa.me/50589600977" class="whatsapp-button" target="_blank">
+    <svg  class="icon icon-tabler icon-tabler-brand-whatsapp" 
+    width="36"
+     height="36"
+      viewBox="0 0 24 24" 
+      stroke-width="1.5" 
+      stroke="#fff" 
+      fill="none" 
+      stroke-linecap="round" 
+      stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+        <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+      </svg>
+      
+  </a>
+
+
+
+
+
+  <style>
+      .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      text-decoration: none;
+      font-size: 30px;
+      z-index: 999;
+       
+      &:hover {
+      background-color: #1DA851;
+    }
+  }
+  </style> -->`;
 }, "C:/Users/frede/Desktop/PortableGit/Gym/src/components/wasap.astro", void 0);
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Planes Power Building 2.0", "data-astro-cid-j7pv25f6": true }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Wasap", $$Wasap, { "data-astro-cid-j7pv25f6": true })} ${maybeRenderHead()}<section class="sect-element-gruop-main" data-astro-cid-j7pv25f6> <div class="content-img-bg" data-astro-cid-j7pv25f6> <div class="container-elements-div" data-astro-cid-j7pv25f6> <h1 data-astro-cid-j7pv25f6><span data-astro-cid-j7pv25f6>Power</span> <br data-astro-cid-j7pv25f6>Building 2.0</h1> <p class="style-p-center-index-mobile  style-p-center-index-destok" data-astro-cid-j7pv25f6>
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Planes Power Building 2.0", "data-astro-cid-j7pv25f6": true }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Wasap", $$Wasap, { "data-astro-cid-j7pv25f6": true })} ${maybeRenderHead()}<div class="progress-grow" data-astro-cid-j7pv25f6></div> <section class="sect-element-gruop-main" data-astro-cid-j7pv25f6> <div class="content-img-bg" data-astro-cid-j7pv25f6> <div class="container-elements-div" data-astro-cid-j7pv25f6> <h1 data-astro-cid-j7pv25f6><span data-astro-cid-j7pv25f6>Power</span> <br data-astro-cid-j7pv25f6>Building 2.0</h1> <p class="style-p-center-index-mobile  style-p-center-index-destok" data-astro-cid-j7pv25f6>
 ¡TU CAMINO PARA ROMPER LÍMITES!
 </p> <div class="container-btn" data-astro-cid-j7pv25f6> <a class="btn-click-Start-Now" href="#" data-astro-cid-j7pv25f6>¡EMPIEZA HOY!</a> </div> </div> </div> </section> <section class="sect-element-gruop-main" data-astro-cid-j7pv25f6> <div class="container-elements-div" data-astro-cid-j7pv25f6> <div class="container-list-beneficio" data-astro-cid-j7pv25f6> <h3 data-astro-cid-j7pv25f6>GYM FITNESS</h3> <p data-astro-cid-j7pv25f6>
 ¿Qué estás esperando, crack? Si estás harto de dar vueltas
@@ -61,7 +108,7 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
 No pierdas más tiempo. Únete a la familia de Power
                         Building 2.0 y empieza a destrozarlo en el gimnasio.
                         ¿Listo para el cambio real?
-</p> </article> </div> </div> </section> <section class="sect-element-gruop-main" data-astro-cid-j7pv25f6> <div class="container-elements-div" data-astro-cid-j7pv25f6> <div class="container-result" data-astro-cid-j7pv25f6> ${renderComponent($$result2, "GymCard", $$GymCard, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "BtnLink", $$Btnlink, { "href": "/store", "title": "\xA1Mira nuestro nuevos Productos 'SUPLEMENTOS' !", "body": "Visitar Tienda ", "hoverStyle": "hover-green", "data-astro-cid-j7pv25f6": true }, { "default": ($$result3) => renderTemplate` <svg class="icon icon-tabler icon-tabler-arrow-move-right" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-j7pv25f6> <path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-cid-j7pv25f6></path> <path d="M11 12h10" data-astro-cid-j7pv25f6></path> <path d="M18 9l3 3l-3 3" data-astro-cid-j7pv25f6></path> <path d="M7 12a2 2 0 1 1 -4 0a2 2 0 0 1 4 0z" data-astro-cid-j7pv25f6></path> </svg> ` })} <div class="imgbg" data-astro-cid-j7pv25f6></div> </div> </div> </section> <section class="sect-element-gruop-main" data-astro-cid-j7pv25f6> <div class="container-elements-div" data-astro-cid-j7pv25f6> <div class="faq" data-astro-cid-j7pv25f6> ${renderComponent($$result2, "Desplegable", $$Acordion, { "data-astro-cid-j7pv25f6": true })} </div> </div> </section> ` })} `;
+</p> </article> </div> </div> </section> <section class="sect-element-gruop-main" data-astro-cid-j7pv25f6> <div class="container-elements-div" data-astro-cid-j7pv25f6> <div class="container-result" data-astro-cid-j7pv25f6> ${renderComponent($$result2, "GymCard", $$GymCard, { "data-astro-cid-j7pv25f6": true })} ${renderComponent($$result2, "BtnLink", $$Btnlink, { "href": "/store", "title": "\xA1Mira nuestro nuevos productos!", "body": "Visitar Tienda ", "hoverStyle": "hover-green", "data-astro-cid-j7pv25f6": true }, { "default": ($$result3) => renderTemplate` <svg class="icon icon-tabler icon-tabler-arrow-move-right" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-j7pv25f6> <path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-cid-j7pv25f6></path> <path d="M11 12h10" data-astro-cid-j7pv25f6></path> <path d="M18 9l3 3l-3 3" data-astro-cid-j7pv25f6></path> <path d="M7 12a2 2 0 1 1 -4 0a2 2 0 0 1 4 0z" data-astro-cid-j7pv25f6></path> </svg> ` })} <div class="imgbg" data-astro-cid-j7pv25f6></div> </div> </div> </section> <section data-astro-cid-j7pv25f6></section> <section class="sect-element-gruop-main" data-astro-cid-j7pv25f6> <div class="container-elements-div" data-astro-cid-j7pv25f6> <div class="faq" data-astro-cid-j7pv25f6> ${renderComponent($$result2, "Desplegable", $$Acordion, { "data-astro-cid-j7pv25f6": true })} </div> </div> </section> ` })} `;
 }, "C:/Users/frede/Desktop/PortableGit/Gym/src/pages/index.astro", void 0);
 
 const $$file = "C:/Users/frede/Desktop/PortableGit/Gym/src/pages/index.astro";

@@ -2535,18 +2535,20 @@ const createExports = (manifest, { middlewareSecret, skewProtection }) => {
 
 const _page0 = () => import('./pages/_image.astro.mjs');
 const _page1 = () => import('./pages/404.astro.mjs');
-const _page2 = () => import('./pages/caloriecalculator.astro.mjs');
-const _page3 = () => import('./pages/politicaprivacidad.astro.mjs');
-const _page4 = () => import('./pages/store.astro.mjs');
-const _page5 = () => import('./pages/index.astro.mjs');
+const _page2 = () => import('./pages/500.astro.mjs');
+const _page3 = () => import('./pages/calculator.astro.mjs');
+const _page4 = () => import('./pages/politicaprivacidad.astro.mjs');
+const _page5 = () => import('./pages/store.astro.mjs');
+const _page6 = () => import('./pages/index.astro.mjs');
 
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/generic.js", _page0],
     ["src/pages/404.astro", _page1],
-    ["src/pages/CalorieCalculator.astro", _page2],
-    ["src/pages/PoliticaPrivacidad.astro", _page3],
-    ["src/pages/store.astro", _page4],
-    ["src/pages/index.astro", _page5]
+    ["src/pages/500.astro", _page2],
+    ["src/pages/Calculator.astro", _page3],
+    ["src/pages/PoliticaPrivacidad.astro", _page4],
+    ["src/pages/store.astro", _page5],
+    ["src/pages/index.astro", _page6]
 ]);
 const serverIslandMap = new Map();
 
@@ -2557,7 +2559,7 @@ const _manifest = Object.assign(manifest, {
     middleware: onRequest
 });
 const _args = {
-    "middlewareSecret": "fd1c892f-e256-4b5a-a06c-84e114ddb8c9",
+    "middlewareSecret": "73721469-57b9-4c35-8e43-321fb79dc28a",
     "skewProtection": false
 };
 const _exports = createExports(_manifest, _args);

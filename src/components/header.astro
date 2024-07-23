@@ -109,26 +109,28 @@
 			<path d="M5 12h16"></path>
 			<path d="M2 4h16"></path>
 		</svg>
-	
-	
-	
-		<svg
+
+
+
+
+
+
+		<svg  
 			id="closed"
 			class="closed-hamburger-movil"
-			width="36"
-			height="36"
-			viewBox="0 0 24 24"
-			stroke-width="1.5"
-			stroke="#fff"
-			fill="none"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-		>
-			<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-			<path d="M5 20h16"></path>
-			<path d="M2 12h16"></path>
-			<path d="M5 4h16"></path>
-		</svg>
+		width="36"
+		 height="36" 
+		 viewBox="0 0 24 24" 
+		 stroke-width="1.5" 
+		 stroke="#ffffff" 
+		 fill="none" 
+		 stroke-linecap="round" 
+		 stroke-linejoin="round">
+			<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+			<path d="M18 6l-12 12" />
+			<path d="M6 6l12 12" />
+		  </svg>
+	
 	</div>
 </header>
 
@@ -163,22 +165,26 @@
 			position: fixed;
 			top: 0;
 			right: 0;
+			
 			border-top-left-radius: 8px;
 			border-bottom-left-radius: 8px;
 			display: flex;
+			justify-content: center;
+			padding-right:20px ;
+			box-sizing: border-box;
 			opacity: 0;
 			align-items: start;
 			transition: opacity 0.4s ease-in-out;
 			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 			pointer-events: none;
-			transform: translateX(300px);
-			transition: transform 0.5s cubic-bezier(0.98, 0.03, 0, 1.01);
+			/* transform: translateX(300px); */
+			transition: transform 0.2s cubic-bezier(0.98, 0.03, 0, 1.01);
 
 			ul {
 				display: flex;
 				justify-content: center;
 				flex-direction: column;
-				align-items: start;
+				align-items: center;
 				width: 100%;
 				margin-top: 80px;
 				gap: 50px;
@@ -189,22 +195,25 @@
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					box-shadow: 0px 1px 1px #999999;
+					padding: 10px;
+					border-radius: 8px;
 					gap: 5px;
+						
+
+					&:hover{	
+						box-shadow: 0px 0px 2px 0px #fff;
+					}
 
 					&:hover svg {
-						stroke: #333;
+						stroke: #FFCC33;
 					}
 
 					a {
 						width: 100%;
 						color: #fff;
+						
 						text-decoration: none;
 						font-size: 20px;
-
-						&:hover {
-							text-decoration: underline;
-						}
 					}
 				}
 			}
@@ -232,6 +241,7 @@
 	}
 
 
+
 	
 	.container-div-center-icons {
 			position: absolute;
@@ -241,6 +251,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			display: flex;
 				}
 
 	@media screen and (min-width: 768px) {
@@ -286,7 +297,7 @@
 				box-shadow: none;
 				transition: none;
 				pointer-events: auto;
-				transform: translateX(0px);
+				/* transform: translateX(0px); */
 
 				ul {
 					display: flex;
@@ -301,10 +312,12 @@
 						align-items: center;
 						justify-content: center;
 						box-shadow: none;
+						padding: 0;
 
 	
 						svg {
 							stroke: #0c0c0c;
+							cursor: pointer;
 						}
 
 						a {
@@ -328,6 +341,11 @@
 				display: none;
 			}
 		}
+
+			
+	.container-div-center-icons {
+			display: none;
+				}
 	}
 	
 </style>

@@ -20,7 +20,11 @@
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/CalorieCalculator\\/?$",
+			"src": "^\\/500\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/Calculator\\/?$",
 			"dest": "_render"
 		},
 		{

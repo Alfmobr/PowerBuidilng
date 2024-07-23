@@ -1,6 +1,6 @@
 import { a as createComponent, r as renderTemplate, d as renderHead, e as renderComponent } from '../chunks/astro/server_DavV_YwI.mjs';
 import 'kleur/colors';
-import { $ as $$Btnlink } from '../chunks/btnlink_DeYF_UpR.mjs';
+import { $ as $$Btnlink } from '../chunks/btnlink_CubhwNK-.mjs';
 /* empty css                               */
 export { renderers } from '../renderers.mjs';
 

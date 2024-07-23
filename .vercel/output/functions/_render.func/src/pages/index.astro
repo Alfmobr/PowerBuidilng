@@ -13,6 +13,8 @@ import Btnlink from "../components/btnlink.astro";
   
     <Wasap />
 
+    <div class="progress-grow"></div>
+
     <section class="sect-element-gruop-main">
         <div class="content-img-bg">
             <div class="container-elements-div">
@@ -103,7 +105,7 @@ import Btnlink from "../components/btnlink.astro";
 
                 <BtnLink
                 href="/store"
-                title="¡Mira nuestro nuevos Productos 'SUPLEMENTOS' !"
+                title="¡Mira nuestro nuevos productos!"
                 body="Visitar Tienda "
                 hoverStyle="hover-green"
             >  <svg  class="icon icon-tabler icon-tabler-arrow-move-right"
@@ -125,6 +127,10 @@ import Btnlink from "../components/btnlink.astro";
             </div>
  
         </div>
+    </section>
+    
+    <section>
+        
     </section>
 
     <section class="sect-element-gruop-main">
@@ -148,6 +154,8 @@ import Btnlink from "../components/btnlink.astro";
             height: 100%;
             box-sizing: border-box;
             background-image: url(/public/img/ans.jpg);
+            mask-image: 
+            linear-gradient( #000 93%, transparent);
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
@@ -159,9 +167,6 @@ import Btnlink from "../components/btnlink.astro";
             padding: 1rem;
             box-sizing: border-box;
             display: grid;
-            /* display: flex;
-            flex-direction: column;
-            gap: 20px; */
 
             h1 {
                 color: #ffcc33;
@@ -258,7 +263,7 @@ import Btnlink from "../components/btnlink.astro";
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            gap: 10px;
+            gap: 20px;
             z-index: 99;
 
 
@@ -266,12 +271,14 @@ import Btnlink from "../components/btnlink.astro";
                 width: 100%;
                 height: 100%;
                 position: absolute;
-                background-image: url(/public/img/puas.png);
+                background-image: url(/public/img/pared.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
-                opacity: .03;
+                opacity: .06;
+                filter: contrast(3);
                 z-index: -999;
-
+                 mask-image: 
+                 linear-gradient(black 96%, transparent);
             }
         }
 
@@ -315,15 +322,23 @@ import Btnlink from "../components/btnlink.astro";
         }
     }
 
-    .center {
-        margin-top: 10px;
-        height: 50%;
-        width: auto;
-        overflow: hidden;
-        border-radius: 8px;
-        background-color: red;
-        pointer-events: none;
-    }
+    @keyframes progress-grow{
+    0% { width: 0% } 
+    100% { width: 100% } 
+}
+
+.progress-grow{
+    height: 2px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    
+    background-color:#FFCC33;
+    animation: progress-grow auto linear;
+    animation-timeline: scroll(root);
+    z-index: 9999999;
+}
 
     @media screen and (min-width: 801px) {
         .sect-element-gruop-main {
@@ -338,9 +353,6 @@ import Btnlink from "../components/btnlink.astro";
             width: 100%;
             height: 100%;
             box-sizing: border-box;
-            background-image: url(/public/img/ans.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
             display:flex;
             justify-content: center;
             box-sizing: border-box;
@@ -449,7 +461,7 @@ import Btnlink from "../components/btnlink.astro";
             height: 100%;
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 20px;
         }
 
         .container-element-ul-list {

@@ -1,21 +1,5 @@
 
 
-function ToggleTranslate (){
-	const hamburguer = document.getElementById('hamburguer');
-	const open = document.getElementById('open');
-	const closed = document.getElementById('closed');
-	hamburguer.style.opacity = '1' ;
-    hamburguer.style.transform = (hamburguer.style.transform === 'translateX(0px)') ? 'translateX(300px)' : 'translateX(0px)';
-	hamburguer.style.pointerEvents = (hamburguer.style.pointerEvents === 'auto') ? 'none' : 'auto';
-	open.style.display = (open.style.display === 'none') ? 'flex' : 'none';
-	closed.style.display = (closed.style.display === 'block') ? 'none' : 'block';
-}
-
-const open = document.getElementById('open');
-open.addEventListener('click', ToggleTranslate)
-
-const closed = document.getElementById('closed');
-closed.addEventListener('click', ToggleTranslate);
 
 
 
@@ -23,6 +7,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburguer = document.getElementById('hamburguer');
     const open = document.getElementById('open');
     const closed = document.getElementById('closed');
+
+
+    
+function ToggleTranslate (){
+	hamburguer.style.opacity = '1' ;
+    hamburguer.style.transform = (hamburguer.style.transform === 'translateX(0px)') ? 'translateX(300px)' : 'translateX(0px)';
+	hamburguer.style.pointerEvents = (hamburguer.style.pointerEvents === 'auto') ? 'none' : 'auto';
+	open.style.display = (open.style.display === 'none') ? 'flex' : 'none';
+	closed.style.display = (closed.style.display === 'block') ? 'none' : 'block';
+}
+
+
+open.addEventListener('click', ToggleTranslate)
+
+closed.addEventListener('click', ToggleTranslate);
 
 
     function handleResize() {
@@ -33,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburguer.style.pointerEvents = 'auto'; 
             open.style.display = 'none';
             closed.style.display = 'none';
+           
         } else {
             hamburguer.style.display = 'flex';
             hamburguer.style.transform = 'translateX(300px)'; 

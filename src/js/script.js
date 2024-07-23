@@ -39,8 +39,8 @@ document.getElementById('calorieForm').addEventListener('submit', function(e) {
 
     const dailyCalories = bmr * activityMultiplier;
     const maintainCalories = Math.round(dailyCalories);
-    const loseCalories = Math.round(dailyCalories - 500); // Aproximadamente 0.5 kg por semana
-    const gainCalories = Math.round(dailyCalories + 500); // Aproximadamente 0.5 kg por semana
+    const loseCalories = Math.round(dailyCalories - 500); 
+    const gainCalories = Math.round(dailyCalories + 500); 
 
     document.getElementById('maintain-weight').innerText = `Calorías para mantener el peso: ${maintainCalories}`;
     document.getElementById('lose-weight').innerText = `Calorías para perder peso: ${loseCalories}`;
