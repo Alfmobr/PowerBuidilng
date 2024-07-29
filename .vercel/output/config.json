@@ -13,7 +13,7 @@
 		},
 		{
 			"src": "^\\/_image$",
-			"dest": "_render"
+			"dest": "/public/img/$1"
 		},
 		{
 			"src": "^\\/404\\/?$",
